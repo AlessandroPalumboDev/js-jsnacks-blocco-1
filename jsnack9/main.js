@@ -22,4 +22,10 @@ for (let i = 1; i <= count; i++){
         i--;
     };
 };
-console.log(`La somma totale dei ${count} numeri è ${somma}`)
+console.log(`La somma totale dei ${count} numeri è ${somma}`);
+
+// AGGIUNGO CODICE PER CALCOLO DELLA MEDIA
+// --divido la somma per la quantità di numeri per ottenere la media e stampo
+console.log(`La media dei ${count} numeri è ${somma / count}`);
+
+
