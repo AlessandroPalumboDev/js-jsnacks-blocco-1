@@ -1,20 +1,24 @@
 "use strict"
 
-// --creo 10 prompt
-let numero1 = Number( prompt ('inserisci un numero'));
-let numero2 = Number( prompt ('inserisci un numero'));
-let numero3 = Number( prompt ('inserisci un numero'));
-let numero4 = Number( prompt ('inserisci un numero'));
-let numero5 = Number( prompt ('inserisci un numero'));
-let numero6 = Number( prompt ('inserisci un numero'));
-let numero7 = Number( prompt ('inserisci un numero'));
-let numero8 = Number( prompt ('inserisci un numero'));
-let numero9 = Number( prompt ('inserisci un numero'));
-let numero10 = Number( prompt ('inserisci un numero'));
+// variabile della somma iniziale a 0 
+let somma = 0;
 
-// --sommo le variabili
-const somma = Number(numero1 + numero2 + numero3 + numero4 +numero5 + numero6 + numero7 + numero8 + numero9 + numero10)
+// Quanti numeri sono richiesti
+const count = 10
 
-// --stampo il risultato
-console.log(somma)
+// richieste tramite prompt
+for (let i = 1; i <= count; i++){
+    const numero = Number(prompt(`Digita il ${i}° numero di ${count}`))
+
+    // verifico che sia sempre numeri
+    if (!isNaN (numero)){
+        somma += numero;
+    }else {
+        console.log(`Il ${i}° dato inserito non è un numero`);
+    
+        // rimuovo dal contatore il valore che non è un numero
+        i--;
+    };
+};
+console.log(`La somma totale dei ${count} numeri è ${somma}`)
 
