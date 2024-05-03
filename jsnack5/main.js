@@ -13,6 +13,12 @@ for (let i = 1; i <= count; i++){
     // verifico che sia sempre un numero 
     if (!isNaN (numero)){
 
+        // se è un numero dispari
+        if (numero % 2 != 0){
+        // aggiungo ad array
+        numeriDispari.push(numero);
+        };
+
     // in caso non sia un numero
     }else {
         console.log(`Il ${i}° dato inserito non è un numero`);
@@ -21,6 +27,8 @@ for (let i = 1; i <= count; i++){
         i--;
     };
 };
+
+console.log(`I numeri dispari inseriti sono ${numeriDispari}`);
 
 
 
