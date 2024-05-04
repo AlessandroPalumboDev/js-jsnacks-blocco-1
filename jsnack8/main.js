@@ -33,10 +33,16 @@ if (!isNaN(numero)) {
     } else {
         console.log(`Puoi inserire solo un numero di ${lunghezza} cifre!`)
         alert(`Puoi inserire solo un numero di ${lunghezza} cifre!`);
+
+        // ricarico la pagina per chiedere nuovamente l'inserimeno del numero
+        location.reload();
     };
 
-    // in caso non sia un numero
+// in caso non sia un numero
 } else {
     console.log(`Non puoi digitare caratteri diversi da numeri`);
     alert(`Non puoi digitare caratteri diversi da numeri`);
+
+    // ricarico la pagina per chiedere nuovamente l'inserimeno del numero
+    location.reload();
 };
