@@ -8,6 +8,6 @@ Stampa il risultato in console
 .creo variabile per il prompt di richiesta numero
 .controllo che sia un numero con un IF altrimenti stampo messaggio
 ..mi assicuro che il numero inserito sia della giusta lunghezza con un IF altrimenti stampa messaggio
-...uso split per smontare il numero inserito
+<!-- ...uso split per smontare il numero inserito      --- inutile -->
 ...creo un ciclo per sommare le cifre del numero smontato
 ...stampo il risultato

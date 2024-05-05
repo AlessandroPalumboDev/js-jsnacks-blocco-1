@@ -16,13 +16,15 @@ if (!isNaN(numero)) {
     if (numero.length === lunghezza) {
 
         // smonto il numero inserito creando un array "momentaneo"
-        const numeroSmontato = numero.split('');
+        // const numeroSmontato = numero.split('');               ---inutile
 
         // Ciclo per sommare gli elementi dell'array
-        for (let i = 0; i < numeroSmontato.length; i++) {
+        // for (let i = 0; i < numeroSmontato.length; i++) {      ---vecchio
+        for (let i = 0; i < numero.length; i++) {
 
             // per fare la somma devo prima trasformare gli elementi dell' array "momentaneo" in numeri
-            somma += Number(numeroSmontato[i]);
+            // somma += Number(numeroSmontato[i]);                ---vecchio
+            somma += Number(numero[i]);
         }
 
         // stampo il risultato
