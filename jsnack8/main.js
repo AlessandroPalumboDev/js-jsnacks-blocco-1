@@ -10,7 +10,7 @@ const lunghezza = 4;
 const numero = prompt(`Inserisci un numero di ${lunghezza} cifre`);
 
 // verifico che sia sempre un numero 
-if (!isNaN(numero)) {
+if (!isNaN(Number(numero))) {
 
     // mi assicuro siano solo e al massimo {lunghezza} cifre
     if (numero.length === lunghezza) {

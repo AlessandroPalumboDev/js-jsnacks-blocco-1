@@ -29,8 +29,3 @@ for (let i = 1; i <= count; i++){
 };
 
 console.log(`I numeri dispari inseriti sono ${numeriDispari}`);
-
-
-
-
-
